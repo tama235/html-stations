@@ -10,9 +10,10 @@ function getData() {
 }
 
 function buildFullName(data) {  
-    
-    const newDate = { ...date};
-    
+    const newData = { ...data};
+    newData.full_name = `${data.family_name} ${data.first_name}`;
+    return newData;
+
 
     // Station14の問題はこちらです。想定する答えをここを書いてください。
     // 氏名がわかるようにしつつ、半角スペースで繋いでください。
